@@ -1,0 +1,48 @@
+
+#body{ 
+    padding: 20px;
+    background-image: linear-gradient(to bottom, black, rgb(17, 15, 15), black  );
+}
+
+
+#container{  
+    justify-content: space-around;  
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 5px;
+}
+
+.cardCarro{
+    display: grid;
+    grid-template-rows: 10% 90%;  
+    height: 330px;  
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #383838;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+}
+
+p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.painel {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #383838;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+    z-index: 2000;
+    width: 80vw;
+    height: 80vh;
+    position: relative;
+    
+   
+}
