@@ -1,15 +1,15 @@
 
 #body{ 
     padding: 20px;
-    background-image: linear-gradient(to bottom, black, rgb(17, 15, 15), black  );
+    background-image: radial-gradient(circle, rgb(43, 42, 42) 20%, rgb(131, 131, 131), rgb(39, 37, 37));
+    background-attachment: fixed;
 }
-
 
 #container{  
     justify-content: space-around;  
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 5px;
+    margin: 5px;   
 }
 
 .cardCarro{
@@ -19,10 +19,11 @@
     padding: 10px;
     margin: 10px;
     border-radius: 8px;
-    background-color: #383838;
+    background-color: #000000;
     overflow: hidden;
     color: white;
     cursor: pointer;
+    
 }
 
 p{
@@ -30,19 +31,52 @@ p{
     font-weight: bolder;
 }
 
-.painel {
-    display: grid;
-    grid-template-rows: 10% 90%;
-    margin: 10px;
+.painelContainer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;   
+    left: 0px;
+    background-color: rgba(0, 0, 0, .7); 
+    display: none;  
+}
+
+.painelContainer.mostrar{
+    display: flex;
+   
+}
+
+.painel{    
+   
     border-radius: 8px;
-    background-color: #383838;
+    border: white;
+    width: 75vw;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 10% 100%; 
     overflow: hidden;
     color: white;
     cursor: pointer;
+    padding: 20px; 
     z-index: 2000;
-    width: 80vw;
-    height: 80vh;
     position: relative;
+     
+}
+
+#btnCard{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(68, 63, 63);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: lightcyan;
+
+
     
-   
 }

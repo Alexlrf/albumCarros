@@ -55,7 +55,7 @@ public class CarroController {
 	@GetMapping("/nomeCarro")
 	public ResponseEntity<List<CarroDTO>> buscaCarroPorNome(@RequestParam("nomeCarro") String nomeCarro){
 		List<CarroDTO> listaCarros = carroService.findByNomeContaining(nomeCarro);
-		return ResponseEntity.ok().body(listaCarros);
+		return !listaCarros.isEmpty()? ResponseEntity.ok().body(listaCarros) : ResponseEntity.noContent().build();
 		
 	}
 
