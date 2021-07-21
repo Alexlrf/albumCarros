@@ -12,6 +12,16 @@
     margin: 5px;   
 }
 
+@media (max-width: 700px)
+{
+    #container
+   {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 5px;  
+   }
+}
+
 .cardCarro{
     display: grid;
     grid-template-rows: 10% 90%;  
