@@ -36,6 +36,11 @@
     
 }
 
+.cardCarro:hover{
+    background-color: white;
+    color: black;
+}
+
 p{
     font-size: 20px;
     font-weight: bolder;
