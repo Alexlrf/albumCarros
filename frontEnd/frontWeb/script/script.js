@@ -71,6 +71,10 @@ function criaEstiloCard(_card){
 
 _card.onclick = function(){
   
+  var audioMotor = document.querySelector('#motor');
+  audioMotor.currentTime = 1.5;
+  audioMotor.play();
+
   let painelContainer = document.querySelector('.painelContainer');
   painelContainer.setAttribute('class', 'painelContainer mostrar');
 
@@ -87,16 +91,17 @@ _card.onclick = function(){
   painelContainer.appendChild(painelCard);
 
 
-  botaoFechar.onclick = function(){
+  botaoFechar.onclick = function(){ 
+    audioMotor.pause();
+    audioMotor.currentTime = 0;
     _card.setAttribute('class', 'cardCarro');         
-    painelContainer.setAttribute('class', 'painelContainer');
+    painelContainer.setAttribute('class', 'painelContainer');    
     var div = document.querySelector('.painelContainer');
       while(div.firstChild){
          div.removeChild(div.firstChild);
       }
   }       
 } 
-
 
 }
 
