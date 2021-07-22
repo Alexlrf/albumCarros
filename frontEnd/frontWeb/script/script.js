@@ -52,22 +52,6 @@ function criaEstiloCard(_card){
     this.style.backgroundColor = "black";
     this.style.color = "white";
   }
-/*
-  _card.onclick = function(){
-    _card.setAttribute('class', 'painel');
-  
-    let painelContainer = document.querySelector('.painelContainer');
-    painelContainer.setAttribute('class', 'painelContainer mostrar');
-  
-    let botaoFechar = document.querySelector('#btnCard');
-
-    botaoFechar.onclick = function(){
-      _card.setAttribute('class', 'cardCarro');         
-      painelContainer.setAttribute('class', 'painelContainer');
-
-    }       
-  } 
-*/ 
 
 _card.onclick = function(){
   
