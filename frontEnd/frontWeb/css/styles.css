@@ -9,7 +9,104 @@
     justify-content: space-around;  
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 5px;   
+    margin: 5px; 
+     
+}
+
+.cardCarro{
+    display: grid;
+    grid-template-rows: 10% 90%;  
+    height: 330px;   
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #000000;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+    flex-wrap: wrap; 
+    
+}
+
+.cardCarro:hover{
+    background-color: white;
+    color: black;    
+    filter: saturate(250%);
+    transition: all linear 0.6s;
+   
+}
+
+.cardCarro img:hover{        
+    transform: scale(1.13);
+    transition: all linear 0.7s;
+}
+
+p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.painelContainer {
+    position: fixed;    
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;   
+    left: 0px;
+    background-color: rgba(0, 0, 0, .7);    
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.6s linear; 
+    
+}
+
+.painelContainer.mostrar{    
+    visibility: visible;
+    opacity: 1;
+   
+}
+
+.painel{ 
+    background-color: aliceblue;   
+    border-radius: 10px;
+    border: white;
+    width: 75vw;
+    height: 90vh;
+    display: grid;
+    margin: auto;
+    grid-template-rows: 100%; 
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+    padding: 20px; 
+    z-index: 2000;
+    position: relative;      
+    
+}
+
+.imagemDoModal{
+    width: 70vw;
+    height: 85vh;
+    display: block;
+    margin: auto;    
+}
+
+.btnCard{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(68, 63, 63);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: lightcyan;
+
+}
+
+.btnCard:hover{
+    background-color: rgb(14, 13, 13);
 }
 
 @media (max-width: 700px)
@@ -20,78 +117,4 @@
     grid-template-columns: 100%;
     margin: 5px;  
    }
-}
-
-.cardCarro{
-    display: grid;
-    grid-template-rows: 10% 90%;  
-    height: 330px;  
-    padding: 10px;
-    margin: 10px;
-    border-radius: 8px;
-    background-color: #000000;
-    overflow: hidden;
-    color: white;
-    cursor: pointer;
-    
-}
-
-.cardCarro:hover{
-    background-color: white;
-    color: black;
-}
-
-p{
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-.painelContainer {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    width: 100vw;
-    height: 100vh;
-    top: 0px;   
-    left: 0px;
-    background-color: rgba(0, 0, 0, .7); 
-    display: none;  
-}
-
-.painelContainer.mostrar{
-    display: flex;
-   
-}
-
-.painel{    
-   
-    border-radius: 8px;
-    border: white;
-    width: 75vw;
-    height: 90vh;
-    display: grid;
-    grid-template-rows: 10% 100%; 
-    overflow: hidden;
-    color: white;
-    cursor: pointer;
-    padding: 20px; 
-    z-index: 2000;
-    position: relative;
-     
-}
-
-#btnCard{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(68, 63, 63);
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: lightcyan;
-
-
-    
 }

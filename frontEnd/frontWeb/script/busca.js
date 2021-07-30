@@ -1,3 +1,4 @@
+let btnPesquisa = document.querySelector('#btnBusca');
 
 btnPesquisa.onclick = function(event){
     event.preventDefault();
