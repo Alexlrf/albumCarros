@@ -22,6 +22,7 @@ public class Carro {
 	@Column(name="url_foto")
 	private String caminho;
 	private String tipo;
+	private String descricao;
 	
 
 }

@@ -12,6 +12,7 @@ public class CarroDTO {
 	private String nome;
 	private String caminho;
 	private String tipo;
+	private String descricao;
 	
 	public static CarroDTO criaCarroDTO(Carro carro) {
 		ModelMapper modelMapper = new ModelMapper();

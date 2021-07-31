@@ -22,21 +22,28 @@ function criaCardCarro(carro){
 
   var novoCard = document.createElement('div');
   novoCard.setAttribute('class', 'cardCarro');
-  novoCard.setAttribute('onclick', 'abre_card(event)');
+  novoCard.setAttribute('onclick', 'abre_card(event)');  
 
   let nomeCarro = document.createElement('p');
+  let descricao = document.createElement('p');
+  descricao.setAttribute('class', 'descricao');
+
+  let textoDescricao = document.createTextNode(carro.descricao);
+  descricao.appendChild(textoDescricao); 
 
   let textoNomeCarro = document.createTextNode(carro.nome);
   nomeCarro.appendChild(textoNomeCarro);   
 
   let imagem = document.createElement('img');
+  imagem.setAttribute('class', 'imgCard');
   imagem.setAttribute('src', carro['caminho']);
   imagem.setAttribute('width', '100%');
-  imagem.setAttribute('height', '100%');  
-        
+  imagem.setAttribute('height', '100%'); 
+  imagem.setAttribute('border-radius', '15px') 
+   
+  novoCard.appendChild(descricao);
   novoCard.appendChild(nomeCarro);
   novoCard.appendChild(imagem);
 
   divContainer.appendChild(novoCard); 
 }
-
