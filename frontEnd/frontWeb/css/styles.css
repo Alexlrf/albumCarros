@@ -36,8 +36,9 @@
    
 }
 
-.cardCarro img:hover{        
-    transform: scale(1.13);
+img:hover{
+    overflow: hidden;       
+    transform: scale(1.05);
     transition: all linear 0.7s;
 }
 
@@ -97,7 +98,8 @@ p{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgb(68, 63, 63);
+    border: none;
+    background-color: rgb(75, 72, 72);
     position: absolute;
     right: 10px;
     top: 10px;
@@ -106,7 +108,8 @@ p{
 }
 
 .btnCard:hover{
-    background-color: rgb(14, 13, 13);
+    background-color: rgb(3, 3, 3);
+    border: 2.5px solid #fff;
 }
 
 @media (max-width: 700px)

@@ -27,12 +27,12 @@ function criaCardCarro(carro){
   let nomeCarro = document.createElement('p');
 
   let textoNomeCarro = document.createTextNode(carro.nome);
-  nomeCarro.appendChild(textoNomeCarro);       
+  nomeCarro.appendChild(textoNomeCarro);   
 
   let imagem = document.createElement('img');
   imagem.setAttribute('src', carro['caminho']);
   imagem.setAttribute('width', '100%');
-  imagem.setAttribute('height', '100%');
+  imagem.setAttribute('height', '100%');  
         
   novoCard.appendChild(nomeCarro);
   novoCard.appendChild(imagem);
