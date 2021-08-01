@@ -5,6 +5,41 @@
     background-attachment: fixed;
 }
 
+#erroBusca{
+    background-image: url('../imagens/garagem_vazia.jpg');
+    background-position: center;    
+    border-radius: 20px;    
+    width: 95vw;
+    height: 80vh; 
+    position: fixed;  
+    visibility: hidden;
+    margin: auto;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.6s linear;  
+}
+
+#erroBusca.mostrar{
+    visibility: visible;
+    opacity: 1;
+}
+
+#btnFechaRetorno{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(75, 72, 72);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: lightcyan;
+}
+
+#btnFechaRetorno:hover{
+    background-color: rgb(3, 3, 3);
+    border: 2.5px solid #fff;
+}
+
 #container{  
     justify-content: space-around;  
     display: grid;
@@ -16,10 +51,10 @@
 .cardCarro{
     display: grid;
     grid-template-rows: 10% 90%;  
-    height: 95%;     
+    height: 330px;     
     padding: 10px;
     margin: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: #000000;
     overflow: hidden;
     color: white;
@@ -138,7 +173,10 @@ p{
     display: none;
 }
 
+.imgGaragem{
+    width: 90%;
 
+}
 
 
 @media (max-width: 700px)
