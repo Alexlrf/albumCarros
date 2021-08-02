@@ -1,5 +1,5 @@
 let btnPesquisa = document.querySelector('#btnBusca');
-var imagemRetorno = document.querySelector('#erroBusca');
+var imagemRetorno = document.querySelector('.erroBusca');
 
 btnPesquisa.onclick = function(event){
   event.preventDefault();
