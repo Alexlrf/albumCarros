@@ -18,10 +18,11 @@ Aplicação construída com HTML5, CSS3 e Javascript no front-end e api-rest Jav
 ## Demonstração
 https://user-images.githubusercontent.com/58455692/128096069-0e1547c7-81fa-417a-954e-6d47da40959c.mp4
 
+<br><br> 
 
 https://user-images.githubusercontent.com/58455692/128096100-528c1168-81c1-4d66-ab66-829048e622ba.mp4
 
-
+<br><br>
 ## <img align="center" width="84" height="40" src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Handshake.gif"> Contato
 <a href="https://www.linkedin.com/in/alexfogazzi/"><img align="center" width="84" height="30" src="https://img.shields.io/badge/Alex-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 <a href="https://www.linkedin.com/in/alexfogazzi/"><img align="center" width="84" height="30" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
