@@ -10,7 +10,6 @@
 <img align="center" width="84" height="30" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
 <img align="center" width="84" height="30" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
 <img align="center" width="84" height="30" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white">
-<img align="center" width="84" height="30" src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white">
 <br><br>
 
 ## <img align="center" width="40" height="50" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png"> Sobre
